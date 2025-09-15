@@ -1,13 +1,78 @@
+/* 
+    "Create Account" button color: #596D48;
+    Input field border color: #E5E7EB;
+    input:invalid : red border;
+    input:focus : blue border, box-shadow (subtle)
+
+*/
+
 /* Basic setup */
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
-
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
 /* Specific CSS styling */
+
+body {
+    display: flex;
+}
+
+.images {
+    height: 100vh;
+    width: 40vw;
+    background-image: url("./img/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -8%;
+
+}
+
+.fern-background {
+    background-position: -25%;
+}
+
+.background-ferns {
+    display: block;
+    height: 100vh;
+    min-width: 25vw;
+    /* left: 100px; */
+}
+
+.logo-banner {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    align-content: center;
+    position: absolute;
+    top: 20vh;
+    /* left: 0; */
+    background-color: rgb(255, 255, 255 / 50%);
+    max-height: 10vh;
+}
+
+.logo-img {
+    max-height: 15vh;
+    width: auto;
+}
+
+.logo-text {
+    font-family: norsebold;
+    color: white;
+    font-size: 100%;
+}
+
+.text-area {
+    width: 70vw;
+}
