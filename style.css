@@ -26,28 +26,22 @@
 
 body {
     display: flex;
-    min-width: 650px;
+    min-width: 700px;
 }
 
 .images {
-    /* display: flex; */
     height: 100vh;
-    width: 40vw;
-    min-width: 200px;
-    width: clamp(200px, 25vw, 30vw);
+    width: clamp(250px, 25vw, 30vw);
     background-image: url("./img/halie-west-25xggax4bSA-unsplash.jpg");
     background-size: contain;
     background-attachment: fixed;
     background-position: -8%;
+    position: relative;
 }
 
 .logo-banner {
     height: 18vh;
     width: 100%;
-
-    /* temp solution */
-    max-width: 36.2vw; 
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,13 +52,24 @@ body {
 
 .logo-img {
     max-height: 10vh;
-    width: auto;
 }
 
 .logo-text {
     font-family: norsebold;
     color: white;
     font-size: 7.5vh;
+}
+
+.photo-credits {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.photo-credits a {
+    color: white;
 }
 
 .text-area {
