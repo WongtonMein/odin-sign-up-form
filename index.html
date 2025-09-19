@@ -17,15 +17,34 @@
         </div>
     </div>
     <div class="text-area">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+        <p class="intro">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</p>
+        <!-- <p class="intro"></p> -->
         <form action="">
             <fieldset>
                 <legend>Let's do this!</legend>
+                <label id="first-name">FIRST NAME</label>
+                <input type="text" id="first-name" for="first-name" placeholder="Thor" required>
 
+                <label id="first-name">LAST NAME</label>
+                <input type="text" id="last-name" for="last-name" placeholder="Odinson" required>
+
+                <label id="email">EMAIL</label>
+                <input type="email" id="email" for="email" placeholder="thor_odinson@theodinproject.com" required>
+
+                <label id="phone-number">PHONE NUMBER</label>
+                <input type="text" id="phone-number" for="phone-number" placeholder="123-456-7890" required>
+
+                <label id="password-init">PASSWORD</label>
+                <input type="password" id="password-init" for="password-init" required>
+
+                <label id="password-confirm">CONFIRM PASSWORD</label>
+                <input type="password" id="password-confirm" for="password-confirm" required>
+                <br>
+                <input type="submit" id="submit-button" value="Create Account">
+                
             </fieldset>
         </form>
-        <p></p>
+        <p>Already have an account? <a href="#login-page">Log in</a></p>
     </div>
     <!-- 
     DIV 1
