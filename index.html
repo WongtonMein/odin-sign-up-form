@@ -18,33 +18,36 @@
     </div>
     <div class="text-area">
         <p class="intro">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.<br><br>You <em>know</em> you want to.</p>
-        <!-- <p class="intro"></p> -->
-        <form action="">
-            <fieldset>
-                <legend>Let's do this!</legend>
+        <p class="form-start">Let's do this!</p>
+        <form action="" method="post" id="signup-form" >
+            <div class="form-element">
                 <label id="first-name">FIRST NAME</label>
                 <input type="text" id="first-name" for="first-name" placeholder="Thor" required>
-
-                <label id="first-name">LAST NAME</label>
+            </div>
+            <div class="form-element">
+                <label id="last-name">LAST NAME</label>
                 <input type="text" id="last-name" for="last-name" placeholder="Odinson" required>
-
+            </div>
+            <div class="form-element">
                 <label id="email">EMAIL</label>
                 <input type="email" id="email" for="email" placeholder="thor_odinson@theodinproject.com" required>
-
+            </div>                
+            <div class="form-element">
                 <label id="phone-number">PHONE NUMBER</label>
-                <input type="text" id="phone-number" for="phone-number" placeholder="123-456-7890" required>
-
+                <input type="text" id="phone-number" for="phone-number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter a phone number in the format XXX-XXX-XXXX." required>
+            </div>
+            <div class="form-element">
                 <label id="password-init">PASSWORD</label>
-                <input type="password" id="password-init" for="password-init" required>
-
+                <input type="password" id="password-init" for="password-init" minlength="8" required>
+            </div>
+            <div class="form-element">
                 <label id="password-confirm">CONFIRM PASSWORD</label>
-                <input type="password" id="password-confirm" for="password-confirm" required>
-                <br>
-                <input type="submit" id="submit-button" value="Create Account">
-                
-            </fieldset>
+                <input type="password" id="password-confirm" for="password-confirm" minlength="8" required>
+            </div>
+            <br>
         </form>
-        <p>Already have an account? <a href="#login-page">Log in</a></p>
+        <input type="submit" id="submit-button" form="signup-form" value="Create Account">
+        <p class="log-in">Already have an account? <a href="#login-page">Log in</a></p>
     </div>
     <!-- 
     DIV 1
